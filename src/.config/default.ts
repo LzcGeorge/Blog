@@ -5,29 +5,22 @@ import type { ThemeConfig } from '~/types'
 
 export const defaultConfig: ThemeConfig = {
   site: {
-    title: '活版印字',
-    subtitle: 'Typography',
-    author: 'Moeyua',
-    description: 'Rediscory the beauty of typography',
+    title: '自我认知',
+    subtitle: 'Selfknow',
+    author: 'George Lna',
+    description: 'Rediscover the beauty of mine',
     website: 'https://astro-theme-typography.vercel.app/',
     pageSize: 5,
     socialLinks: [
       {
         name: 'github',
-        href: 'https://github.com/moeyua/astro-theme-typography',
+        href: 'https://github.com/LzcGeorge/',
       },
       {
         name: 'rss',
         href: '/atom.xml',
       },
-      {
-        name: 'twitter',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-      {
-        name: 'mastodon',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
+
     ],
     navLinks: [
       {
@@ -47,11 +40,11 @@ export const defaultConfig: ThemeConfig = {
         href: '/about',
       },
     ],
+    // 分类的 URL 映射表
     categoryMap: [{ name: '胡适', path: 'hu-shi' }],
     footer: [
-      '© %year <a target="_blank" href="%website">%author</a>',
-      'Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a> by <a target="_blank" href="https://moeyua.com">Moeyua</a>',
-      'Proudly published with <a target="_blank" href="https://astro.build/">Astro</a>',
+      'Est. 2023 | Still Growing ',
+      '© %author',
     ],
   },
   appearance: {
@@ -72,21 +65,35 @@ export const defaultConfig: ThemeConfig = {
     },
   },
   seo: {
-    twitter: '@moeyua13',
+    twitter: '',
     meta: [],
     link: [],
   },
   rss: {
-    fullText: true,
+    fullText: false,
   },
+
   comment: {
-    // disqus: { shortname: "typography-astro" },
+    giscus: {
+      repo: 'LzcGeorge/blog_comment',
+      repoId: 'R_kgDOK9wGgg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOK9wGgs4CcABG',
+      mapping: 'og:title',
+      strict: '0',
+      reactionsEnabled: '1',
+      emitMetadata: '0',
+      inputPosition: 'top',
+      theme: 'light',
+      lang: 'zh-CN',
+      loading: 'lazy',
+    },
   },
   analytics: {
     googleAnalyticsId: '',
-    umamiAnalyticsId: '',
+    umamiAnalyticsId: '18b42424-b309-4822-872b-36cf60b1d214',
   },
   latex: {
-    katex: false,
+    katex: true,
   },
 }

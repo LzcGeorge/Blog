@@ -16,7 +16,15 @@ const cssExtend = {
   ':root': {
     '--prose-borders': '#eee',
   },
-
+  'mark': {
+    'border': '.1em solid #202124',
+    'color': '#202124',
+    'background-color': 'transparent',
+    'padding': '.1rem .5rem',
+    'border-radius': '2rem',
+    'margin': '0 .2rem',
+    'font-size': '.95rem',
+  },
   'code::before,code::after': {
     content: 'none',
   },
